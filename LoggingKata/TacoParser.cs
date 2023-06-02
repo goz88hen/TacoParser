@@ -9,7 +9,7 @@
         
         public ITrackable Parse(string line)
         {
-            logger.LogInfo("Begin parsing");
+            logger.LogInfo("Begin parsing{}");
 
             // Take your line and use line.Split(',') to split it up into an array of strings, separated by the char ','
             var cells = line.Split(',');
@@ -47,8 +47,8 @@
             
             
             var tacoBell = new TacoBell();
-            tacoBell.Name = name;   
-            tacoBell.Location
+            tacoBell.Name = name;
+            tacoBell.Location = point;
 
             // Then, return the instance of your TacoBell class
             // Since it conforms to ITrackable
